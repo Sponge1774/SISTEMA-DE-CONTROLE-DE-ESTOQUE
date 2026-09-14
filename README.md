@@ -94,19 +94,17 @@ SISTEMA-DE-CONTROLE-DE-ESTOQUE/
 │   ├── css/
 │   └── js/
 │
-├── docs/
-│   └── images/
-│       ├── tela-login.png
-│       ├── tela-principal.png
-│       ├── cadastro-produtos.png
-│       ├── movimentacao-estoque.png
-│       ├── relatorios.png
-│       └── modelo-banco-dados.png
-│
 ├── main.py
 ├── webapp.py
 ├── requirements.txt
-└── README.md
+├── README.md
+├── tela-login.png
+├── tela-principal.png
+├── cadastro-produtos.png
+├── movimentacao-estoque.png
+├── relatorios.png
+├── modelo-banco-dados.png
+└── fluxograma-logica.png
 ```
 
 > A estrutura pode variar conforme a versão do projeto e os arquivos presentes no repositório.
@@ -133,17 +131,17 @@ http://127.0.0.1:5000
 
 ### Demonstração visual
 
-As imagens ficam em `docs/images/`.
+As imagens ficam na raiz do repositório.
 
 | Tela | Descrição |
 |---|---|
-| <img src="docs/images/tela-login.png" alt="Tela de login da aplicação desktop, com campos de login e senha" width="400"> | Tela de login |
-| <img src="docs/images/tela-principal.png" alt="Tela principal listando produtos em estoque, com linha destacada em vermelho indicando quantidade abaixo do mínimo" width="400"> | Tela principal, com alerta de estoque abaixo do mínimo |
-| <img src="docs/images/cadastro-produtos.png" alt="Formulário de cadastro de novo produto com campos de categoria, fornecedor, quantidade e preço" width="400"> | Cadastro de produtos |
-| <img src="docs/images/movimentacao-estoque.png" alt="Janela de registro de saída de estoque com confirmação de sucesso" width="400"> | Movimentação de estoque |
-| <img src="docs/images/relatorios.png" alt="Página web de geração de relatórios com botões para baixar em CSV ou Excel" width="400"> | Relatórios (interface web) |
-| <img src="docs/images/modelo-banco-dados.png" alt="Diagrama Entidade-Relacionamento mostrando as tabelas Categoria, Fornecedor, Produto, Movimentacao e Usuario e seus relacionamentos" width="400"> | Modelo Entidade-Relacionamento (ER) do banco de dados |
-| <img src="docs/images/fluxograma-logica.png" alt="Fluxograma da lógica da aplicação, do login à atualização do estoque e geração de alertas" width="400"> | Fluxograma da lógica da aplicação |
+| <img src="tela-login.png" alt="Tela de login da aplicação desktop, com campos de login e senha" width="400"> | Tela de login |
+| <img src="tela-principal.png" alt="Tela principal listando produtos em estoque, com linha destacada em vermelho indicando quantidade abaixo do mínimo" width="400"> | Tela principal, com alerta de estoque abaixo do mínimo |
+| <img src="cadastro-produtos.png" alt="Formulário de cadastro de novo produto com campos de categoria, fornecedor, quantidade e preço" width="400"> | Cadastro de produtos |
+| <img src="movimentacao-estoque.png" alt="Janela de registro de saída de estoque com confirmação de sucesso" width="400"> | Movimentação de estoque |
+| <img src="relatorios.png" alt="Página web de geração de relatórios com botões para baixar em CSV ou Excel" width="400"> | Relatórios (interface web) |
+| <img src="modelo-banco-dados.png" alt="Diagrama Entidade-Relacionamento mostrando as tabelas Categoria, Fornecedor, Produto, Movimentacao e Usuario e seus relacionamentos" width="400"> | Modelo Entidade-Relacionamento (ER) do banco de dados |
+| <img src="fluxograma-logica.png" alt="Fluxograma da lógica da aplicação, do login à atualização do estoque e geração de alertas" width="400"> | Fluxograma da lógica da aplicação |
 
 ### Instalação
 
@@ -334,19 +332,17 @@ SISTEMA-DE-CONTROLE-DE-ESTOQUE/
 │   ├── css/
 │   └── js/
 │
-├── docs/
-│   └── images/
-│       ├── tela-login.png
-│       ├── tela-principal.png
-│       ├── cadastro-produtos.png
-│       ├── movimentacao-estoque.png
-│       ├── relatorios.png
-│       └── modelo-banco-dados.png
-│
 ├── main.py
 ├── webapp.py
 ├── requirements.txt
-└── README.md
+├── README.md
+├── tela-login.png
+├── tela-principal.png
+├── cadastro-produtos.png
+├── movimentacao-estoque.png
+├── relatorios.png
+├── modelo-banco-dados.png
+└── fluxograma-logica.png
 ```
 
 > Structure may vary depending on the project version and files present in the repository.
@@ -373,17 +369,17 @@ http://127.0.0.1:5000
 
 ### Visual demonstration
 
-Images are stored in `docs/images/`.
+Images are stored in the repository root.
 
 | Screen | Description |
 |---|---|
-| <img src="docs/images/tela-login.png" alt="Desktop application login screen with username and password fields" width="400"> | Login screen |
-| <img src="docs/images/tela-principal.png" alt="Main screen listing stock items, with a row highlighted in red indicating a quantity below the minimum" width="400"> | Main screen, with a below-minimum stock alert |
-| <img src="docs/images/cadastro-produtos.png" alt="New product registration form with category, supplier, quantity, and price fields" width="400"> | Product registration |
-| <img src="docs/images/movimentacao-estoque.png" alt="Stock exit registration window with a success confirmation" width="400"> | Stock movement |
-| <img src="docs/images/relatorios.png" alt="Web report generation page with buttons to download in CSV or Excel" width="400"> | Reports (web interface) |
-| <img src="docs/images/modelo-banco-dados.png" alt="Entity-Relationship diagram showing the Categoria, Fornecedor, Produto, Movimentacao, and Usuario tables and their relationships" width="400"> | Entity-Relationship (ER) model of the database |
-| <img src="docs/images/fluxograma-logica.png" alt="Application logic flowchart, from login to stock updates and alert generation" width="400"> | Application logic flowchart |
+| <img src="tela-login.png" alt="Desktop application login screen with username and password fields" width="400"> | Login screen |
+| <img src="tela-principal.png" alt="Main screen listing stock items, with a row highlighted in red indicating a quantity below the minimum" width="400"> | Main screen, with a below-minimum stock alert |
+| <img src="cadastro-produtos.png" alt="New product registration form with category, supplier, quantity, and price fields" width="400"> | Product registration |
+| <img src="movimentacao-estoque.png" alt="Stock exit registration window with a success confirmation" width="400"> | Stock movement |
+| <img src="relatorios.png" alt="Web report generation page with buttons to download in CSV or Excel" width="400"> | Reports (web interface) |
+| <img src="modelo-banco-dados.png" alt="Entity-Relationship diagram showing the Categoria, Fornecedor, Produto, Movimentacao, and Usuario tables and their relationships" width="400"> | Entity-Relationship (ER) model of the database |
+| <img src="fluxograma-logica.png" alt="Application logic flowchart, from login to stock updates and alert generation" width="400"> | Application logic flowchart |
 
 ### Installation
 
