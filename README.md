@@ -1,8 +1,6 @@
 # Sistema de Controle de Estoque
 
-Aplicação de controle de estoque desenvolvida em Python, com duas interfaces de utilização: uma aplicação desktop construída com Tkinter e uma aplicação web desenvolvida com Flask.
-
-O projeto utiliza regras de negócio compartilhadas e um banco de dados SQLite, permitindo controlar produtos, categorias, fornecedores e movimentações de entrada e saída de estoque.
+Aplicação de controle de estoque desenvolvida em Python, com duas interfaces de uso: uma aplicação desktop construída com Tkinter e uma aplicação web desenvolvida com Flask. O projeto compartilha as mesmas regras de negócio e um banco de dados SQLite entre as duas interfaces, permitindo gerenciar produtos, categorias, fornecedores e movimentações de entrada e saída de estoque.
 
 ---
 
@@ -12,108 +10,61 @@ O projeto utiliza regras de negócio compartilhadas e um banco de dados SQLite, 
 
 O Sistema de Controle de Estoque foi desenvolvido como projeto acadêmico da disciplina **Development with Python**, do Centro Universitário UniFECAF.
 
-A aplicação foi projetada para demonstrar a utilização de Python em um sistema integrado de gerenciamento de estoque, reunindo:
+A aplicação demonstra o uso de Python em um sistema integrado de gerenciamento de estoque, reunindo:
 
-* Interface desktop com Tkinter;
-* Interface web com Flask;
-* Banco de dados SQLite;
-* Autenticação de usuários;
-* Controle de permissões;
-* Cadastro de produtos;
-* Controle de categorias e fornecedores;
-* Registro de entradas e saídas;
-* Relatórios de estoque;
-* Exportação de dados para CSV e Excel.
+- Interface desktop com Tkinter
+- Interface web com Flask
+- Banco de dados SQLite
+- Autenticação de usuários e controle de permissões
+- Cadastro de produtos, categorias e fornecedores
+- Registro de entradas e saídas de estoque
+- Relatórios de estoque
+- Exportação de dados para CSV e Excel
 
-O sistema utiliza uma estrutura compartilhada de regras de negócio, permitindo que as interfaces desktop e web trabalhem com os mesmos dados.
-
----
+As interfaces desktop e web operam sobre a mesma camada de regras de negócio, garantindo consistência entre os dados manipulados por qualquer uma delas.
 
 ### Objetivos
 
-O projeto tem como principais objetivos:
-
-* Desenvolver uma aplicação prática utilizando Python;
-* Aplicar conceitos de programação orientada a objetos;
-* Trabalhar com banco de dados SQLite;
-* Implementar autenticação e controle de acesso;
-* Organizar regras de negócio em módulos reutilizáveis;
-* Criar interfaces desktop e web;
-* Registrar e consultar movimentações de estoque;
-* Gerar relatórios para análise dos dados;
-* Aplicar conceitos de modelagem de dados e organização de sistemas.
-
----
+- Desenvolver uma aplicação prática utilizando Python
+- Aplicar conceitos de programação orientada a objetos
+- Trabalhar com banco de dados SQLite
+- Implementar autenticação e controle de acesso
+- Organizar regras de negócio em módulos reutilizáveis
+- Criar interfaces desktop e web integradas
+- Registrar e consultar movimentações de estoque
+- Gerar relatórios para análise de dados
+- Aplicar conceitos de modelagem de dados e organização de sistemas
 
 ### Funcionalidades
 
-#### Autenticação
+**Autenticação**
+- Tela de login com validação de usuário e senha
+- Perfis de administrador e usuário comum, com controle de acesso conforme o perfil
+- Senhas armazenadas com hash SHA-256
 
-* Tela de login;
-* Validação de usuário e senha;
-* Usuário administrador;
-* Usuário comum;
-* Controle de acesso conforme o perfil;
-* Senhas armazenadas utilizando hash SHA-256.
+**Produtos**
+- Cadastro, alteração, exclusão e consulta de produtos
+- Controle de quantidade em estoque e definição de estoque mínimo
+- Associação com categorias e fornecedores
 
-#### Gerenciamento de produtos
+**Categorias**
+- Cadastro, alteração, exclusão e consulta de categorias
 
-* Cadastro de produtos;
-* Alteração de produtos;
-* Exclusão de produtos;
-* Consulta de produtos;
-* Controle de quantidade em estoque;
-* Definição de estoque mínimo;
-* Associação com categorias e fornecedores.
+**Fornecedores**
+- Cadastro, alteração, exclusão e consulta de fornecedores
 
-#### Gerenciamento de categorias
+**Movimentações de estoque**
+- Registro de entradas e saídas, com data e produto associados
+- Atualização automática da quantidade disponível
+- Controle do estoque mínimo
 
-* Cadastro de categorias;
-* Alteração de categorias;
-* Exclusão de categorias;
-* Consulta de categorias.
-
-#### Gerenciamento de fornecedores
-
-* Cadastro de fornecedores;
-* Alteração de fornecedores;
-* Exclusão de fornecedores;
-* Consulta de fornecedores.
-
-#### Movimentações de estoque
-
-* Registro de entradas;
-* Registro de saídas;
-* Atualização da quantidade disponível;
-* Registro da data da movimentação;
-* Associação da movimentação ao produto;
-* Controle do estoque mínimo.
-
-#### Relatórios
-
-* Consulta do estoque atual;
-* Consulta de movimentações;
-* Exportação para CSV;
-* Exportação para Excel;
-* Utilização da biblioteca `pandas`;
-* Geração de planilhas com `openpyxl`.
-
----
+**Relatórios**
+- Consulta do estoque atual e do histórico de movimentações
+- Exportação para CSV e Excel, usando `pandas` e `openpyxl`
 
 ### Tecnologias utilizadas
 
-* **Python 3**
-* **Tkinter**
-* **Flask**
-* **SQLite**
-* **Pandas**
-* **OpenPyXL**
-* **HTML**
-* **CSS**
-* **Jinja2**
-* **SHA-256**
-
----
+Python 3 · Tkinter · Flask · SQLite · Pandas · OpenPyXL · HTML · CSS · Jinja2 · SHA-256
 
 ### Estrutura do projeto
 
@@ -158,217 +109,127 @@ SISTEMA-DE-CONTROLE-DE-ESTOQUE/
 └── README.md
 ```
 
-> A estrutura apresentada pode variar conforme a versão do projeto e os arquivos existentes no repositório.
+> A estrutura pode variar conforme a versão do projeto e os arquivos presentes no repositório.
 
----
+### Como executar
 
-### Interfaces do sistema
-
-O projeto possui duas formas de utilização.
-
-#### Aplicação desktop
-
-A aplicação desktop utiliza a biblioteca Tkinter e pode ser executada diretamente pelo arquivo `main.py`.
+**Aplicação desktop** (Tkinter):
 
 ```bash
 python main.py
 ```
 
-#### Aplicação web
-
-A aplicação web utiliza o framework Flask e pode ser executada pelo arquivo `webapp.py`.
+**Aplicação web** (Flask):
 
 ```bash
 python webapp.py
 ```
 
-Após iniciar a aplicação web, acesse no navegador:
+Após iniciar a aplicação web, acesse:
 
 ```text
 http://127.0.0.1:5000
 ```
 
----
-
 ### Demonstração visual
 
-As imagens de demonstração devem ser mantidas na pasta:
+As imagens ficam em `docs/images/`.
 
-```text
-docs/images/
-```
-
-#### Tela de login
-
-![Tela de login](docs/images/tela-login.png)
-
-#### Tela principal
-
-![Tela principal](docs/images/tela-principal.png)
-
-#### Cadastro de produtos
-
-![Cadastro de produtos](docs/images/cadastro-produtos.png)
-
-#### Movimentação de estoque
-
-![Movimentação de estoque](docs/images/movimentacao-estoque.png)
-
-#### Relatórios
-
-![Relatórios](docs/images/relatorios.png)
-
-#### Modelo do banco de dados
-
-![Modelo do banco de dados](docs/images/modelo-banco-dados.png)
-
----
+| Tela | Descrição |
+|---|---|
+| ![Login](docs/images/tela-login.png) | Tela de login |
+| ![Principal](docs/images/tela-principal.png) | Tela principal, com alerta de estoque abaixo do mínimo |
+| ![Cadastro de produtos](docs/images/cadastro-produtos.png) | Cadastro de produtos |
+| ![Movimentação](docs/images/movimentacao-estoque.png) | Movimentação de estoque |
+| ![Relatórios](docs/images/relatorios.png) | Relatórios (interface web) |
+| ![Modelo do banco](docs/images/modelo-banco-dados.png) | Modelo Entidade-Relacionamento (ER) do banco de dados |
+| ![Fluxograma](docs/images/fluxograma-logica.png) | Fluxograma da lógica da aplicação |
 
 ### Instalação
 
-Clone o repositório:
-
 ```bash
 git clone https://github.com/Sponge1774/SISTEMA-DE-CONTROLE-DE-ESTOQUE.git
-```
-
-Entre na pasta do projeto:
-
-```bash
 cd SISTEMA-DE-CONTROLE-DE-ESTOQUE
-```
 
-Crie um ambiente virtual:
-
-```bash
 python -m venv venv
-```
 
-Ative o ambiente virtual.
-
-No Linux:
-
-```bash
+# Linux/macOS
 source venv/bin/activate
-```
-
-No Windows:
-
-```powershell
+# Windows
 venv\Scripts\activate
-```
 
-Instale as dependências:
-
-```bash
 pip install -r requirements.txt
 ```
 
----
-
-### Dependências
-
-As principais bibliotecas utilizadas no projeto são:
-
-```text
-pandas
-openpyxl
-flask
-```
-
-Caso o arquivo `requirements.txt` ainda não exista, as dependências podem ser instaladas manualmente:
+Se o `requirements.txt` ainda não existir, instale manualmente as dependências principais:
 
 ```bash
 pip install pandas openpyxl flask
 ```
 
----
-
 ### Credenciais padrão
-
-As credenciais utilizadas para o primeiro acesso são:
 
 ```text
 Usuário: admin
 Senha: admin123
 ```
 
-Recomenda-se alterar a senha padrão em um ambiente de utilização real.
-
----
+> Recomenda-se alterar a senha padrão antes de qualquer uso além do ambiente acadêmico/de testes.
 
 ### Banco de dados
 
-O sistema utiliza o banco de dados SQLite, armazenado no arquivo:
+Armazenado em `database/estoque.db` (SQLite), com as tabelas principais:
 
-```text
-database/estoque.db
-```
+- `usuario`
+- `categoria`
+- `fornecedor`
+- `produto`
+- `movimentacao`
 
-O modelo de dados é composto pelas principais tabelas:
-
-* `usuario`;
-* `categoria`;
-* `fornecedor`;
-* `produto`;
-* `movimentacao`.
-
-Relacionamentos principais:
-
-* Um usuário pode realizar várias movimentações;
-* Uma categoria pode estar associada a vários produtos;
-* Um fornecedor pode fornecer vários produtos;
-* Um produto pode possuir várias movimentações;
-* Cada movimentação está relacionada a um produto.
-
----
+**Relacionamentos:**
+- Um usuário pode realizar várias movimentações
+- Uma categoria pode estar associada a vários produtos
+- Um fornecedor pode fornecer vários produtos
+- Um produto pode possuir várias movimentações
+- Cada movimentação está relacionada a um produto
 
 ### Segurança
 
-O sistema possui mecanismos básicos de segurança, incluindo:
+Mecanismos implementados:
+- Autenticação e controle de permissões
+- Separação entre administrador e usuário comum
+- Senhas com hash SHA-256
+- Validação das operações de cadastro
 
-* Autenticação de usuários;
-* Controle de permissões;
-* Separação entre usuário administrador e usuário comum;
-* Armazenamento de senhas com hash SHA-256;
-* Validação das operações de cadastro;
-* Restrição de determinadas funções conforme o perfil.
+Por se tratar de um projeto acadêmico, para uso em produção recomenda-se adicionar:
+- Hash de senha com Argon2 ou bcrypt
+- Controle de sessão mais robusto
+- Proteção contra CSRF
+- Validação avançada de entradas
+- Registro de logs e controle de tentativas de login
+- Configuração via variáveis de ambiente
 
-Por se tratar de um projeto acadêmico, recomenda-se implementar mecanismos adicionais para utilização em produção, como:
+### Sincronização entre interfaces
 
-* Hash com algoritmo específico para senhas, como Argon2 ou bcrypt;
-* Controle de sessão mais robusto;
-* Proteção contra CSRF;
-* Validação avançada de entradas;
-* Registro de logs;
-* Controle de tentativas de login;
-* Configuração de variáveis de ambiente.
+Desktop e web compartilham as mesmas regras de negócio e o mesmo banco SQLite. A atualização dos dados depende da consulta/recarregamento na interface em uso — não há atualização em tempo real entre elas (ver "Melhorias futuras").
 
----
+### Melhorias futuras
 
-### Sincronização
-
-As interfaces desktop e web utilizam as mesmas regras de negócio e o mesmo banco de dados SQLite.
-
-A sincronização entre as interfaces ocorre por meio da utilização compartilhada do banco de dados. A atualização dos dados depende da consulta ou recarregamento das informações na interface utilizada.
-
-Uma possível evolução do projeto seria implementar atualização em tempo real entre as interfaces.
-
----
+- Atualização em tempo real entre interfaces
+- API REST
+- Migração para PostgreSQL ou MySQL
+- Gráficos de movimentação e dashboard administrativo
+- Controle de estoque por localização
+- Cadastro de usuários e recuperação de senha pela interface
+- Relatórios em PDF
+- Testes automatizados
+- Docker e deploy em servidor
+- Interface responsiva aprimorada
+- Níveis de permissão mais detalhados
 
 ### Documentação acadêmica
 
-O projeto foi acompanhado de documentação teórica e técnica, incluindo:
-
-* Descrição do sistema;
-* Objetivos do projeto;
-* Tecnologias utilizadas;
-* Modelagem do banco de dados;
-* Descrição das funcionalidades;
-* Regras de negócio;
-* Estrutura das tabelas;
-* Considerações sobre segurança;
-* Possíveis melhorias futuras.
+O projeto foi acompanhado de documentação teórica e técnica cobrindo descrição do sistema, objetivos, tecnologias, modelagem do banco de dados, funcionalidades, regras de negócio, estrutura das tabelas, segurança e melhorias futuras.
 
 **Autor:** Eduardo Souza Mattos
 **R.A.:** 35984
@@ -377,40 +238,9 @@ O projeto foi acompanhado de documentação teórica e técnica, incluindo:
 **Disciplina:** Development with Python
 **Ano:** 2026
 
----
-
-### Melhorias futuras
-
-Entre as possíveis melhorias estão:
-
-* Implementação de atualização em tempo real;
-* Criação de uma API REST;
-* Integração com banco de dados PostgreSQL ou MySQL;
-* Inclusão de gráficos de movimentação;
-* Dashboard administrativo;
-* Controle de estoque por localização;
-* Cadastro de usuários pela interface;
-* Recuperação de senha;
-* Relatórios em PDF;
-* Implementação de testes automatizados;
-* Uso de Docker;
-* Deploy em servidor;
-* Melhoria da interface responsiva;
-* Implementação de níveis de permissão mais detalhados.
-
----
-
 ### Licença
 
-Este projeto foi desenvolvido para fins acadêmicos e educacionais.
-
----
-
-# Inventory Control System
-
-Python-based inventory management application with two user interfaces: a desktop application developed with Tkinter and a web application developed with Flask.
-
-The project uses shared business rules and an SQLite database to manage products, categories, suppliers, and stock movements.
+Projeto desenvolvido para fins acadêmicos e educacionais.
 
 ---
 
@@ -422,106 +252,59 @@ The Inventory Control System was developed as an academic project for the **Deve
 
 The application demonstrates the use of Python in an integrated inventory management system, including:
 
-* Tkinter desktop interface;
-* Flask web interface;
-* SQLite database;
-* User authentication;
-* Access control;
-* Product management;
-* Category and supplier management;
-* Stock entries and exits;
-* Inventory reports;
-* CSV and Excel data export.
+- Tkinter desktop interface
+- Flask web interface
+- SQLite database
+- User authentication and access control
+- Product, category, and supplier management
+- Stock entry and exit registration
+- Inventory reports
+- CSV and Excel data export
 
-The system uses shared business rules, allowing both desktop and web interfaces to work with the same data.
-
----
+Both interfaces run on the same business-rule layer, ensuring consistent data regardless of which one is used.
 
 ### Objectives
 
-The main objectives of the project are:
-
-* Develop a practical application using Python;
-* Apply object-oriented programming concepts;
-* Work with an SQLite database;
-* Implement authentication and access control;
-* Organize business rules into reusable modules;
-* Create desktop and web interfaces;
-* Register and consult stock movements;
-* Generate reports for data analysis;
-* Apply data modeling and system organization concepts.
-
----
+- Develop a practical application using Python
+- Apply object-oriented programming concepts
+- Work with an SQLite database
+- Implement authentication and access control
+- Organize business rules into reusable modules
+- Build integrated desktop and web interfaces
+- Register and query stock movements
+- Generate reports for data analysis
+- Apply data modeling and system organization concepts
 
 ### Features
 
-#### Authentication
+**Authentication**
+- Login screen with username/password validation
+- Administrator and common-user profiles with role-based access control
+- Passwords stored using SHA-256 hashing
 
-* Login screen;
-* Username and password validation;
-* Administrator user;
-* Common user;
-* Profile-based access control;
-* Password storage using SHA-256 hashing.
+**Products**
+- Registration, editing, deletion, and search
+- Stock quantity control and minimum stock threshold
+- Category and supplier association
 
-#### Product management
+**Categories**
+- Registration, editing, deletion, and search
 
-* Product registration;
-* Product updates;
-* Product deletion;
-* Product search;
-* Stock quantity control;
-* Minimum stock level;
-* Category and supplier association.
+**Suppliers**
+- Registration, editing, deletion, and search
 
-#### Category management
+**Stock movements**
+- Entry and exit registration with date and associated product
+- Automatic update of available quantity
+- Minimum stock control
 
-* Category registration;
-* Category updates;
-* Category deletion;
-* Category search.
-
-#### Supplier management
-
-* Supplier registration;
-* Supplier updates;
-* Supplier deletion;
-* Supplier search.
-
-#### Stock movements
-
-* Stock entry registration;
-* Stock exit registration;
-* Available quantity updates;
-* Movement date registration;
-* Product association;
-* Minimum stock control.
-
-#### Reports
-
-* Current inventory consultation;
-* Stock movement consultation;
-* CSV export;
-* Excel export;
-* Use of the `pandas` library;
-* Spreadsheet generation with `openpyxl`.
-
----
+**Reports**
+- Current inventory and movement history queries
+- CSV and Excel export using `pandas` and `openpyxl`
 
 ### Technologies
 
-* **Python 3**
-* **Tkinter**
-* **Flask**
-* **SQLite**
-* **Pandas**
-* **OpenPyXL**
-* **HTML**
-* **CSS**
-* **Jinja2**
-* **SHA-256**
-
----
+Python 3 · Tkinter · Flask · SQLite · Pandas · OpenPyXL · HTML · CSS · Jinja2 · SHA-256
 
 ### Project structure
 
@@ -566,217 +349,127 @@ SISTEMA-DE-CONTROLE-DE-ESTOQUE/
 └── README.md
 ```
 
-> The structure may vary depending on the project version and the files available in the repository.
+> Structure may vary depending on the project version and files present in the repository.
 
----
+### How to run
 
-### System interfaces
-
-The project provides two ways to use the system.
-
-#### Desktop application
-
-The desktop application uses Tkinter and can be started through `main.py`.
+**Desktop application** (Tkinter):
 
 ```bash
 python main.py
 ```
 
-#### Web application
-
-The web application uses the Flask framework and can be started through `webapp.py`.
+**Web application** (Flask):
 
 ```bash
 python webapp.py
 ```
 
-After starting the web application, open the following address in your browser:
+After starting the web application, open:
 
 ```text
 http://127.0.0.1:5000
 ```
 
----
-
 ### Visual demonstration
 
-Demonstration images should be stored in:
+Images are stored in `docs/images/`.
 
-```text
-docs/images/
-```
-
-#### Login screen
-
-![Login screen](docs/images/tela-login.png)
-
-#### Main screen
-
-![Main screen](docs/images/tela-principal.png)
-
-#### Product registration
-
-![Product registration](docs/images/cadastro-produtos.png)
-
-#### Stock movement
-
-![Stock movement](docs/images/movimentacao-estoque.png)
-
-#### Reports
-
-![Reports](docs/images/relatorios.png)
-
-#### Database model
-
-![Database model](docs/images/modelo-banco-dados.png)
-
----
+| Screen | Description |
+|---|---|
+| ![Login](docs/images/tela-login.png) | Login screen |
+| ![Main](docs/images/tela-principal.png) | Main screen, with a below-minimum stock alert |
+| ![Product registration](docs/images/cadastro-produtos.png) | Product registration |
+| ![Stock movement](docs/images/movimentacao-estoque.png) | Stock movement |
+| ![Reports](docs/images/relatorios.png) | Reports (web interface) |
+| ![Database model](docs/images/modelo-banco-dados.png) | Entity-Relationship (ER) model of the database |
+| ![Flowchart](docs/images/fluxograma-logica.png) | Application logic flowchart |
 
 ### Installation
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/Sponge1774/SISTEMA-DE-CONTROLE-DE-ESTOQUE.git
-```
-
-Enter the project directory:
-
-```bash
 cd SISTEMA-DE-CONTROLE-DE-ESTOQUE
-```
 
-Create a virtual environment:
-
-```bash
 python -m venv venv
-```
 
-Activate the virtual environment.
-
-On Linux:
-
-```bash
+# Linux/macOS
 source venv/bin/activate
-```
-
-On Windows:
-
-```powershell
+# Windows
 venv\Scripts\activate
-```
 
-Install the dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
 
----
-
-### Dependencies
-
-The main libraries used in the project are:
-
-```text
-pandas
-openpyxl
-flask
-```
-
-If the `requirements.txt` file does not exist, install the dependencies manually:
+If `requirements.txt` doesn't exist yet, install the main dependencies manually:
 
 ```bash
 pip install pandas openpyxl flask
 ```
 
----
-
 ### Default credentials
-
-The default credentials for the first access are:
 
 ```text
 Username: admin
 Password: admin123
 ```
 
-The default password should be changed in a real-world environment.
-
----
+> The default password should be changed before any use beyond the academic/testing environment.
 
 ### Database
 
-The system uses an SQLite database stored in:
+Stored in `database/estoque.db` (SQLite), with the main tables:
 
-```text
-database/estoque.db
-```
+- `usuario`
+- `categoria`
+- `fornecedor`
+- `produto`
+- `movimentacao`
 
-The data model includes the following main tables:
-
-* `usuario`;
-* `categoria`;
-* `fornecedor`;
-* `produto`;
-* `movimentacao`.
-
-Main relationships:
-
-* One user can perform multiple stock movements;
-* One category can be associated with multiple products;
-* One supplier can provide multiple products;
-* One product can have multiple stock movements;
-* Each movement is related to a product.
-
----
+**Relationships:**
+- One user can perform multiple movements
+- One category can be associated with multiple products
+- One supplier can provide multiple products
+- One product can have multiple movements
+- Each movement is related to one product
 
 ### Security
 
-The system includes basic security mechanisms, such as:
+Implemented mechanisms:
+- Authentication and permission control
+- Separation between administrator and common users
+- SHA-256 password hashing
+- Validation of registration operations
 
-* User authentication;
-* Permission control;
-* Separation between administrator and common users;
-* Password storage using SHA-256 hashing;
-* Validation of registration operations;
-* Profile-based access restrictions.
+Since this is an academic project, for production use it's recommended to add:
+- Argon2 or bcrypt password hashing
+- More robust session management
+- CSRF protection
+- Advanced input validation
+- Logging and login-attempt control
+- Environment-variable configuration
 
-Since this is an academic project, additional mechanisms are recommended for production use, including:
+### Synchronization between interfaces
 
-* Password hashing with algorithms such as Argon2 or bcrypt;
-* More robust session management;
-* CSRF protection;
-* Advanced input validation;
-* Log registration;
-* Login attempt control;
-* Environment variable configuration.
+Desktop and web share the same business rules and SQLite database. Data updates depend on querying/reloading in the interface being used — there is no real-time sync between them (see "Future improvements").
 
----
+### Future improvements
 
-### Synchronization
-
-The desktop and web interfaces use the same business rules and SQLite database.
-
-Synchronization between the interfaces is achieved through the shared database. Data updates depend on querying or reloading information in the interface being used.
-
-A possible future improvement would be implementing real-time updates between the interfaces.
-
----
+- Real-time updates between interfaces
+- REST API
+- Migration to PostgreSQL or MySQL
+- Movement charts and administrative dashboard
+- Stock control by location
+- User registration and password recovery through the interface
+- PDF reports
+- Automated tests
+- Docker and server deployment
+- Improved responsive interface
+- More granular permission levels
 
 ### Academic documentation
 
-The project was accompanied by theoretical and technical documentation, including:
-
-* System description;
-* Project objectives;
-* Technologies used;
-* Database modeling;
-* Feature descriptions;
-* Business rules;
-* Table structure;
-* Security considerations;
-* Possible future improvements.
+The project was accompanied by theoretical and technical documentation covering system description, objectives, technologies, database modeling, features, business rules, table structure, security, and future improvements.
 
 **Author:** Eduardo Souza Mattos
 **Academic ID:** 35984
@@ -785,29 +478,6 @@ The project was accompanied by theoretical and technical documentation, includin
 **Course:** Development with Python
 **Year:** 2026
 
----
-
-### Future improvements
-
-Possible future improvements include:
-
-* Real-time updates;
-* REST API implementation;
-* Integration with PostgreSQL or MySQL;
-* Stock movement charts;
-* Administrative dashboard;
-* Inventory control by location;
-* User registration through the interface;
-* Password recovery;
-* PDF reports;
-* Automated tests;
-* Docker support;
-* Server deployment;
-* Improved responsive interface;
-* More detailed permission levels.
-
----
-
 ### License
 
-This project was developed for academic and educational purposes.
+Developed for academic and educational purposes.
