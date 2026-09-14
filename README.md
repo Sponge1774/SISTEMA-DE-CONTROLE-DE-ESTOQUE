@@ -137,13 +137,13 @@ As imagens ficam em `docs/images/`.
 
 | Tela | Descrição |
 |---|---|
-| ![Login](docs/images/tela-login.png) | Tela de login |
-| ![Principal](docs/images/tela-principal.png) | Tela principal, com alerta de estoque abaixo do mínimo |
-| ![Cadastro de produtos](docs/images/cadastro-produtos.png) | Cadastro de produtos |
-| ![Movimentação](docs/images/movimentacao-estoque.png) | Movimentação de estoque |
-| ![Relatórios](docs/images/relatorios.png) | Relatórios (interface web) |
-| ![Modelo do banco](docs/images/modelo-banco-dados.png) | Modelo Entidade-Relacionamento (ER) do banco de dados |
-| ![Fluxograma](docs/images/fluxograma-logica.png) | Fluxograma da lógica da aplicação |
+| <img src="docs/images/tela-login.png" alt="Tela de login da aplicação desktop, com campos de login e senha" width="400"> | Tela de login |
+| <img src="docs/images/tela-principal.png" alt="Tela principal listando produtos em estoque, com linha destacada em vermelho indicando quantidade abaixo do mínimo" width="400"> | Tela principal, com alerta de estoque abaixo do mínimo |
+| <img src="docs/images/cadastro-produtos.png" alt="Formulário de cadastro de novo produto com campos de categoria, fornecedor, quantidade e preço" width="400"> | Cadastro de produtos |
+| <img src="docs/images/movimentacao-estoque.png" alt="Janela de registro de saída de estoque com confirmação de sucesso" width="400"> | Movimentação de estoque |
+| <img src="docs/images/relatorios.png" alt="Página web de geração de relatórios com botões para baixar em CSV ou Excel" width="400"> | Relatórios (interface web) |
+| <img src="docs/images/modelo-banco-dados.png" alt="Diagrama Entidade-Relacionamento mostrando as tabelas Categoria, Fornecedor, Produto, Movimentacao e Usuario e seus relacionamentos" width="400"> | Modelo Entidade-Relacionamento (ER) do banco de dados |
+| <img src="docs/images/fluxograma-logica.png" alt="Fluxograma da lógica da aplicação, do login à atualização do estoque e geração de alertas" width="400"> | Fluxograma da lógica da aplicação |
 
 ### Instalação
 
@@ -377,13 +377,13 @@ Images are stored in `docs/images/`.
 
 | Screen | Description |
 |---|---|
-| ![Login](docs/images/tela-login.png) | Login screen |
-| ![Main](docs/images/tela-principal.png) | Main screen, with a below-minimum stock alert |
-| ![Product registration](docs/images/cadastro-produtos.png) | Product registration |
-| ![Stock movement](docs/images/movimentacao-estoque.png) | Stock movement |
-| ![Reports](docs/images/relatorios.png) | Reports (web interface) |
-| ![Database model](docs/images/modelo-banco-dados.png) | Entity-Relationship (ER) model of the database |
-| ![Flowchart](docs/images/fluxograma-logica.png) | Application logic flowchart |
+| <img src="docs/images/tela-login.png" alt="Desktop application login screen with username and password fields" width="400"> | Login screen |
+| <img src="docs/images/tela-principal.png" alt="Main screen listing stock items, with a row highlighted in red indicating a quantity below the minimum" width="400"> | Main screen, with a below-minimum stock alert |
+| <img src="docs/images/cadastro-produtos.png" alt="New product registration form with category, supplier, quantity, and price fields" width="400"> | Product registration |
+| <img src="docs/images/movimentacao-estoque.png" alt="Stock exit registration window with a success confirmation" width="400"> | Stock movement |
+| <img src="docs/images/relatorios.png" alt="Web report generation page with buttons to download in CSV or Excel" width="400"> | Reports (web interface) |
+| <img src="docs/images/modelo-banco-dados.png" alt="Entity-Relationship diagram showing the Categoria, Fornecedor, Produto, Movimentacao, and Usuario tables and their relationships" width="400"> | Entity-Relationship (ER) model of the database |
+| <img src="docs/images/fluxograma-logica.png" alt="Application logic flowchart, from login to stock updates and alert generation" width="400"> | Application logic flowchart |
 
 ### Installation
 
